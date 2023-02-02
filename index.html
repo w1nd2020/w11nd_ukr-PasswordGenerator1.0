@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div id="options">
+        <div class="checkbox-group">
+          <input type="checkbox" id="lowercase" checked>
+          <label for="lowercase">a-z</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="uppercase" checked>
+          <label for="uppercase">A-Z</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="numbers" checked>
+          <label for="numbers">0-9</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="symbols">
+          <label for="symbols" id="symbols-label">!@#$%^&*()</label>
+        </div>
+      </div>
+      <button id="generate" onclick="generatePassword()">Generate Password</button>
+      <div id="password">
+        <p id="generated-password"></p>
+      </div>
+      <div id="buttons">
+        <button id="copy" onclick="copyPassword()">Copy to Clipboard</button>
+        <button id="save" onclick="savePassword()">Save to File</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
